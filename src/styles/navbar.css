@@ -1,0 +1,104 @@
+.navbar {
+  width: 100vw;
+  height: 7rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1.75rem;
+  z-index: 100;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.navbar-title {
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.navbar-title:hover {
+  cursor: pointer;
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+.navbar-menu {
+  width: 35%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.85rem;
+}
+
+.navbar-menu li {
+  position: relative;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #000;
+  cursor: pointer;
+}
+
+.navbar-menu li::before {
+  content: '';
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  background-color: #000;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.navbar-menu li:hover::before {
+  opacity: 1;
+}
+
+.navbar-menu li:hover {
+  font-weight: 800;
+}
+
+.navbar-icon {
+  width: 13%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.navbar-cart {
+  position: relative;
+}
+
+.navbar-cart:hover {
+  color: #808080;
+}
+
+.navbar-search:hover {
+  color: #808080;
+}
+
+.navbar-menu:hover {
+  color: #808080;
+  font-size: 4rem;
+}
+
+.navbar-cart-count {
+  position: absolute;
+  top: -15px;
+  padding: 0.25rem 0.5rem;
+  border-radius: 50%;
+  background-color: #ef5619;
+  color: #fff;
+  font-size: 0.75rem;
+}
+
+.navbar-search {
+  font-size: 1.25rem;
+}
+.navbar-cart {
+  font-size: 1.5rem;
+}
+
+.navbar-menu {
+  font-size: 3rem;
+}
